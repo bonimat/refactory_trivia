@@ -24,6 +24,7 @@ class Game {
     var $scienceQuestions;
     var $sportsQuestions;
     var $rockQuestions;
+    var $questionDeck;
 
     var $currentPlayer = 0;
     var $isGettingOutOfPenaltyBox;
@@ -40,14 +41,11 @@ class Game {
         $this->sportsQuestions = array();
         $this->rockQuestions = array();
 
-        $this->fillQuestions();
+        $this->questionDeck = new QuestionDeck();
+        $this->fillQuestions($this);
     }
 
-	function createRockQuestion($index){
-		return "Rock Question " . $index;
-	}
-
-	function isPlayable() {
+    function isPlayable() {
 		return ($this->howManyPlayers() >= 2);
 	}
 
@@ -182,12 +180,19 @@ class Game {
 		return !($this->purses[$this->currentPlayer] == 6);
 	}
 
-    public function fillQuestions() {
+    public function fillQuestions(Game $game) {
         for ($i = 0; $i < 50; $i++) {
-            array_push($this->popQuestions, "Pop Question " . $i);
-            array_push($this->scienceQuestions, ("Science Question " . $i));
-            array_push($this->sportsQuestions, ("Sports Question " . $i));
-            array_push($this->rockQuestions, $this->createRockQuestion($i));
+            array_push($game->popQuestions, "Pop Question " . $i);
+            array_push($game->scienceQuestions, ("Science Question " . $i));
+            array_push($game->sportsQuestions, ("Sports Question " . $i));
+            array_push($game->rockQuestions, QuestionDeck::createRockQuestion($i));
         }
+    }
+}
+
+Class QuestionDeck {
+
+    public function createRockQuestion($index) {
+        return "Rock Question " . $index;
     }
 }
