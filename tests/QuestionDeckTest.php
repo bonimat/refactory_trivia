@@ -88,4 +88,14 @@ class QuestionDeckTest extends TestCase {
 
         $this->assertNotNull($error);
     }
+
+    function manyQuestionForSameCategory(){
+        $questionDeck = new QuestionDeck();
+        $questionDeck->fillQuestions();
+
+        $this->assertEquals("Pop Question 0", $questionDeck->askQuestionFor("Pop"));
+        $this->assertEquals("Pop Question 1", $questionDeck->askQuestionFor("Pop"));
+        $this->assertEquals("Pop Question 2", $questionDeck->askQuestionFor("Pop"));
+        $this->assertEquals("Pop Question 3", $questionDeck->askQuestionFor("Pop"));
+    }
 }
