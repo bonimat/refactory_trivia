@@ -50,7 +50,7 @@ class QuestionDeck
         if ($place == 3) return "Rock";
         if ($place == 7) return "Rock";
         if ($place == 11) return "Rock";
-        throw new Exception('Nessuna Categoria');
+        throw new Exception('Place must be inside the board');
     }
 
     public function createRockQuestion ($index)
