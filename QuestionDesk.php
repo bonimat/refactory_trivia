@@ -1,9 +1,9 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: andrea
- * Date: 2/7/18
- * Time: 10:20 AM
+ *
+ * il passaggio successivo sarebbe quello di passare dalla logica di tanti if per ogni category ad
+ * una struttura ad array che potrebbe anche essere passata da game e precevedere di cambiare in
+ * maniera semplice e flessibile le categorie in gioco.
  */
 include_once "QuestionCategory.php";
 class QuestionDeck
