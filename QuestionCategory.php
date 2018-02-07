@@ -14,10 +14,10 @@ class QuestionCategory {
     /**
      * QuestionCategory constructor.
      */
-    public function __construct($category, $questions, $places) {
+    public function __construct($category, $places) {
 
         $this->category = $category;
-        $this->questions = $questions;
+        $this->questions = array();
         $this->places = $places;
     }
 

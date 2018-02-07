@@ -9,11 +9,13 @@ include_once "QuestionCategory.php";
 class QuestionDeck
 {
 
-    var $popQuestions;
     var $pop;
-    var $scienceQuestions;
-    var $sportsQuestions;
-    var $rockQuestions;
+
+    var $science;
+
+    var $sports;
+
+    var $rock;
 
     private $popPlaces;
 
@@ -24,17 +26,15 @@ class QuestionDeck
     private $rockPlaces;
 
     function  __construct()    {
-        $this->popPlaces = array(0, 4, 8);
-        $this->popQuestions = array();
-        $this->pop = new QuestionCategory("Pop", $this->popQuestions, $this->popPlaces);
-        $this->sciencePlaces = array(1, 5, 9);
-        $this->scienceQuestions = array();
 
-        $this->sportsPlaces = array(2, 6, 10);
-        $this->sportsQuestions = array();
+        $this->pop = new QuestionCategory("Pop", array(0, 4, 8));
 
-        $this->rockPlaces = array(3, 7, 11);
-        $this->rockQuestions = array();
+        $this->science = new QuestionCategory("Science", array(1, 5, 9));
+
+        $this->sports = new QuestionCategory("Sports", array(2, 6, 10));
+
+        $this->rock = new QuestionCategory("Rock", array(3, 7, 11));
+
     }
     /**\
      * @param $category
@@ -42,17 +42,16 @@ class QuestionDeck
     public function nextQuestion ($category)
     {
         if ($category == "Pop") {
-            $this->pop->next();
-            return(array_shift($this->popQuestions));
+            return $this->pop->next();
         }
         if ($category == "Science") {
-            return(array_shift($this->scienceQuestions));
+            return $this->science->next();
         }
         if ($category == "Sports") {
-            return(array_shift($this->sportsQuestions));
+            return $this->sports->next();
         }
         if ($category == "Rock") {
-            return(array_shift($this->rockQuestions));
+            return $this->rock->next();
         }
         throw new Exception("YOU MORON!");
     }
@@ -60,11 +59,9 @@ class QuestionDeck
     public function CategoryAt ($place)
     {
         if ($this->pop->isAt($place)) return $this->pop->getCategory();
-        if (in_array($place, $this->popPlaces)) return "Pop";
-
-        if (in_array($place, $this->sciencePlaces)) return "Science";
-        if (in_array($place, $this->sportsPlaces)) return "Sports";
-        if (in_array($place, $this->rockPlaces)) return "Rock";
+        if ($this->science->isAt($place)) return $this->science->getCategory();
+        if ($this->sports->isAt($place)) return $this->sports->getCategory();
+        if ($this->rock->isAt($place)) return $this->rock->getCategory();
 
         throw new Exception('Place must be inside the board');
     }
@@ -77,11 +74,11 @@ class QuestionDeck
     public function fillQuestions ()
     {
         for ($i = 0; $i < 50; $i++) {
-            array_push($this->popQuestions, "Pop Question " . $i);
             $this->pop->add("Pop Question " . $i);
-            array_push($this->scienceQuestions, ("Science Question " . $i));
-            array_push($this->sportsQuestions, ("Sports Question " . $i));
-            array_push($this->rockQuestions, QuestionDeck::createRockQuestion($i));
+            $this->science->add("Science Question " . $i);
+            $this->sports->add("Sports Question " . $i);
+            $this->rock->add("Rock Question " . $i);
+
         }
     }
 }
