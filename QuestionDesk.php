@@ -5,11 +5,12 @@
  * Date: 2/7/18
  * Time: 10:20 AM
  */
-
+include_once "QuestionCategory.php";
 class QuestionDeck
 {
 
     var $popQuestions;
+    var $pop;
     var $scienceQuestions;
     var $sportsQuestions;
     var $rockQuestions;
@@ -25,7 +26,7 @@ class QuestionDeck
     function  __construct()    {
         $this->popPlaces = array(0, 4, 8);
         $this->popQuestions = array();
-
+        $this->pop = new QuestionCategory("Pop", $this->popQuestions, $this->popPlaces);
         $this->sciencePlaces = array(1, 5, 9);
         $this->scienceQuestions = array();
 
@@ -41,6 +42,7 @@ class QuestionDeck
     public function nextQuestion ($category)
     {
         if ($category == "Pop") {
+            $this->pop->next();
             return(array_shift($this->popQuestions));
         }
         if ($category == "Science") {
@@ -57,7 +59,9 @@ class QuestionDeck
 
     public function CategoryAt ($place)
     {
+        if ($this->pop->isAt($place)) return $this->pop->getCategory();
         if (in_array($place, $this->popPlaces)) return "Pop";
+
         if (in_array($place, $this->sciencePlaces)) return "Science";
         if (in_array($place, $this->sportsPlaces)) return "Sports";
         if (in_array($place, $this->rockPlaces)) return "Rock";
@@ -74,6 +78,7 @@ class QuestionDeck
     {
         for ($i = 0; $i < 50; $i++) {
             array_push($this->popQuestions, "Pop Question " . $i);
+            $this->pop->add("Pop Question " . $i);
             array_push($this->scienceQuestions, ("Science Question " . $i));
             array_push($this->sportsQuestions, ("Sports Question " . $i));
             array_push($this->rockQuestions, QuestionDeck::createRockQuestion($i));
