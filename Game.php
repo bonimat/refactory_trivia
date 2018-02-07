@@ -14,11 +14,6 @@ class Game {
     var $purses ;
     var $inPenaltyBox ;
 
-    var $popQuestions;
-    var $scienceQuestions;
-    var $sportsQuestions;
-    var $rockQuestions;
-
     var $questionDeck;
 
     var $currentPlayer = 0;
