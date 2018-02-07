@@ -3,6 +3,7 @@
     Game
     - field
     - move costruct fillQuestions
+    -Spostiamo askQuestions
 
  *
  *
@@ -30,7 +31,7 @@ class Game {
 
     function  __construct(){
 
-   	$this->players = array();
+   	    $this->players = array();
         $this->places = array(0);
         $this->purses  = array(0);
         $this->inPenaltyBox  = array(0);
@@ -112,16 +113,8 @@ class Game {
 
 
 	function currentCategory() {
-		if ($this->places[$this->currentPlayer] == 0) return "Pop";
-		if ($this->places[$this->currentPlayer] == 4) return "Pop";
-		if ($this->places[$this->currentPlayer] == 8) return "Pop";
-		if ($this->places[$this->currentPlayer] == 1) return "Science";
-		if ($this->places[$this->currentPlayer] == 5) return "Science";
-		if ($this->places[$this->currentPlayer] == 9) return "Science";
-		if ($this->places[$this->currentPlayer] == 2) return "Sports";
-		if ($this->places[$this->currentPlayer] == 6) return "Sports";
-		if ($this->places[$this->currentPlayer] == 10) return "Sports";
-		return "Rock";
+        $place = $this->places[$this->currentPlayer];
+        return QuestionDeck::currentCategoryFor($place);
 	}
 
 	function wasCorrectlyAnswered() {
@@ -183,6 +176,41 @@ class Game {
 
 Class QuestionDeck {
 
+    /**
+     * @param $place
+     * @return string
+     */
+    public function currentCategoryFor($place): string {
+        if ($place == 0) {
+            return "Pop";
+        }
+        if ($place == 4) {
+            return "Pop";
+        }
+        if ($place == 8) {
+            return "Pop";
+        }
+        if ($place == 1) {
+            return "Science";
+        }
+        if ($place == 5) {
+            return "Science";
+        }
+        if ($place == 9) {
+            return "Science";
+        }
+        if ($place == 2) {
+            return "Sports";
+        }
+        if ($place == 6) {
+            return "Sports";
+        }
+        if ($place == 10) {
+            return "Sports";
+        }
+        return "Rock";
+    }
+
     public function createRockQuestion($index) {
         return "Rock Question " . $index;
     }
@@ -195,4 +223,5 @@ Class QuestionDeck {
             array_push($game->rockQuestions, QuestionDeck::createRockQuestion($i));
         }
     }
+
 }
