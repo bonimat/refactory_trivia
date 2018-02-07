@@ -15,7 +15,7 @@ class QuestionDeck
     var $rockQuestions;
 
 
-    function  __construct($game)    {
+    function  __construct()    {
         $this->popQuestions = array();
         $this->scienceQuestions = array();
         $this->sportsQuestions = array();
