@@ -21,33 +21,27 @@ class QuestionDeck
         $this->sportsQuestions = array();
         $this->rockQuestions = array();
     }
-    /**
+    /**\
      * @param $category
      */
     public function askQuestionFor ($category)
     {
+        $x = "WHAT ARE YOU DOING HERE? YOU MORON!";
         if ($category == "Pop") {
             $x = array_shift($this->popQuestions);
-            echoln($x);
-            return $x;
         }
         if ($category == "Science") {
             $x = array_shift($this->scienceQuestions);
-            echoln($x);
-            return $x;
         }
         if ($category == "Sports") {
             $x = array_shift($this->sportsQuestions);
-            echoln($x);
-            return $x;
         }
         if ($category == "Rock") {
             $x = array_shift($this->rockQuestions);
-            echoln($x);
-            return $x;
         }
 
-        return "WHAT ARE YOU DOING HERE? YOU MORON!";
+        echoln($x);
+        return $x;
     }
 
     public function CategoryAt ($place)

@@ -13,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/php$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1518004120953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/php$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1518009267160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DockerExecCommand">
     <ExecCommand>
@@ -36,8 +36,8 @@
       <file leaf-file-name="Game.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Game.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="155" column="1" lean-forward="true" selection-start-line="155" selection-start-column="1" selection-end-line="155" selection-end-column="1" />
+            <state relative-caret-position="90">
+              <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -46,8 +46,8 @@
       <file leaf-file-name="QuestionDesk.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QuestionDesk.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="46" column="22" lean-forward="false" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+            <state relative-caret-position="234">
+              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
               </folding>
@@ -58,8 +58,8 @@
       <file leaf-file-name="QuestionDeckTest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/QuestionDeckTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+            <state relative-caret-position="239">
+              <caret line="75" column="5" lean-forward="false" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -88,6 +88,7 @@
       <find>current</find>
       <find>currentCate</find>
       <find>askQuestio</find>
+      <find>Ask</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -218,32 +219,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517927743414</updated>
-      <workItem from="1517927744560" duration="18571000" />
+      <workItem from="1517927744560" duration="19891000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unnamed - 2018.02.07 at 12h 28m 15s.xml">
-      <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Unnamed - 2018.02.07 at 12h 28m 27s.xml">
-      <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Unnamed - 2018.02.07 at 12h 29m 32s.xml">
-      <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Unnamed - 2018.02.07 at 12h 41m 47s.xml">
-      <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Unnamed - 2018.02.07 at 12h 44m 04s.xml">
-      <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Unnamed - 2018.02.07 at 12h 46m 14s.xml">
-      <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Unnamed - 2018.02.07 at 12h 46m 29s.xml">
-      <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="Unnamed - 2018.02.07 at 12h 46m 37s.xml">
       <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -253,9 +233,30 @@
     <history-entry file="Unnamed - 2018.02.07 at 12h 48m 06s.xml">
       <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="Unnamed - 2018.02.07 at 12h 48m 41s.xml">
+      <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Unnamed - 2018.02.07 at 12h 53m 33s.xml">
+      <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Unnamed - 2018.02.07 at 14h 10m 58s.xml">
+      <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Unnamed - 2018.02.07 at 14h 12m 25s.xml">
+      <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Unnamed - 2018.02.07 at 14h 13m 04s.xml">
+      <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Unnamed - 2018.02.07 at 14h 13m 46s.xml">
+      <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Unnamed - 2018.02.07 at 14h 14m 27s.xml">
+      <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18571000" />
+    <option name="totallyTimeSpent" value="19891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -330,14 +331,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Game.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="155" column="1" lean-forward="true" selection-start-line="155" selection-start-column="1" selection-end-line="155" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/GameTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
@@ -346,10 +339,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/QuestionDesk.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="46" column="22" lean-forward="false" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+        <state relative-caret-position="234">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
           </folding>
@@ -358,8 +359,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/QuestionDeckTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+        <state relative-caret-position="239">
+          <caret line="75" column="5" lean-forward="false" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
           <folding />
         </state>
       </provider>
