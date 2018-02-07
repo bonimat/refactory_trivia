@@ -14,11 +14,25 @@ class QuestionDeck
     var $sportsQuestions;
     var $rockQuestions;
 
+    private $popPlaces;
+
+    private $sciencePlaces;
+
+    private $sportsPlaces;
+
+    private $rockPlaces;
 
     function  __construct()    {
+        $this->popPlaces = array(0, 4, 8);
         $this->popQuestions = array();
+
+        $this->sciencePlaces = array(1, 5, 9);
         $this->scienceQuestions = array();
+
+        $this->sportsPlaces = array(2, 6, 10);
         $this->sportsQuestions = array();
+
+        $this->rockPlaces = array(3, 7, 11);
         $this->rockQuestions = array();
     }
     /**\
@@ -43,10 +57,10 @@ class QuestionDeck
 
     public function CategoryAt ($place)
     {
-        if (in_array($place, array(0,4,8))) return "Pop";
-        if (in_array($place, array(1,5,9))) return "Science";
-        if (in_array($place, array(2,6,10))) return "Sports";
-        if (in_array($place, array(3,7,11))) return "Rock";
+        if (in_array($place, $this->popPlaces)) return "Pop";
+        if (in_array($place, $this->sciencePlaces)) return "Science";
+        if (in_array($place, $this->sportsPlaces)) return "Sports";
+        if (in_array($place, $this->rockPlaces)) return "Rock";
 
         throw new Exception('Place must be inside the board');
     }
