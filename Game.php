@@ -92,7 +92,7 @@ class Game {
 
 
     public function currentCategory() {
-        return $this->questionDeck->currentCategoryFor($this->places[$this->currentPlayer]);
+        return $this->questionDeck->CategoryAt($this->places[$this->currentPlayer]);
     }
 
     function wasCorrectlyAnswered() {

@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="942c3253-05ef-4754-b091-5bf11156198b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Game.php" afterPath="$PROJECT_DIR$/Game.php" />
+      <change beforePath="$PROJECT_DIR$/QuestionDesk.php" afterPath="$PROJECT_DIR$/QuestionDesk.php" />
       <change beforePath="$PROJECT_DIR$/tests/QuestionDeckTest.php" afterPath="$PROJECT_DIR$/tests/QuestionDeckTest.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/php$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1518001493634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/php$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1518002971701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DockerExecCommand">
     <ExecCommand>
@@ -25,8 +28,8 @@
       <file leaf-file-name="GameTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/GameTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="103">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -35,8 +38,8 @@
       <file leaf-file-name="Game.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Game.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="244">
+              <caret line="155" column="1" lean-forward="true" selection-start-line="155" selection-start-column="1" selection-end-line="155" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -45,8 +48,8 @@
       <file leaf-file-name="QuestionDesk.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QuestionDesk.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            <state relative-caret-position="257">
+              <caret line="52" column="46" lean-forward="false" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
               </folding>
@@ -58,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/tests/QuestionDeckTest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="275">
-              <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -97,8 +100,8 @@
       <list>
         <option value="$PROJECT_DIR$/tests/GameTest.php" />
         <option value="$PROJECT_DIR$/Game.php" />
-        <option value="$PROJECT_DIR$/QuestionDesk.php" />
         <option value="$PROJECT_DIR$/tests/QuestionDeckTest.php" />
+        <option value="$PROJECT_DIR$/QuestionDesk.php" />
       </list>
     </option>
   </component>
@@ -217,44 +220,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517927743414</updated>
-      <workItem from="1517927744560" duration="15979000" />
+      <workItem from="1517927744560" duration="17439000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unnamed - 2018.02.07 at 11h 42m 21s.xml">
+    <history-entry file="Unnamed - 2018.02.07 at 12h 23m 03s.xml">
       <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2018.02.07 at 11h 48m 04s.xml">
+    <history-entry file="Unnamed - 2018.02.07 at 12h 24m 01s.xml">
       <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2018.02.07 at 11h 48m 46s.xml">
+    <history-entry file="Unnamed - 2018.02.07 at 12h 25m 22s.xml">
       <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2018.02.07 at 11h 49m 30s.xml">
+    <history-entry file="Unnamed - 2018.02.07 at 12h 26m 04s.xml">
       <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2018.02.07 at 11h 50m 34s.xml">
+    <history-entry file="Unnamed - 2018.02.07 at 12h 26m 31s.xml">
       <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2018.02.07 at 11h 51m 48s.xml">
+    <history-entry file="Unnamed - 2018.02.07 at 12h 26m 53s.xml">
       <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2018.02.07 at 12h 04m 03s.xml">
+    <history-entry file="Unnamed - 2018.02.07 at 12h 27m 14s.xml">
       <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2018.02.07 at 12h 04m 12s.xml">
+    <history-entry file="Unnamed - 2018.02.07 at 12h 28m 15s.xml">
       <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2018.02.07 at 12h 04m 42s.xml">
+    <history-entry file="Unnamed - 2018.02.07 at 12h 28m 27s.xml">
       <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2018.02.07 at 12h 04m 54s.xml">
+    <history-entry file="Unnamed - 2018.02.07 at 12h 29m 32s.xml">
       <configuration name="Unnamed" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15979000" />
+    <option name="totallyTimeSpent" value="17439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -329,26 +332,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/GameTest.php">
+    <entry file="file://$PROJECT_DIR$/Game.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="244">
+          <caret line="155" column="1" lean-forward="true" selection-start-line="155" selection-start-column="1" selection-end-line="155" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Game.php">
+    <entry file="file://$PROJECT_DIR$/tests/GameTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="103">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/QuestionDesk.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="257">
+          <caret line="52" column="46" lean-forward="false" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
           </folding>
@@ -358,7 +361,7 @@
     <entry file="file://$PROJECT_DIR$/tests/QuestionDeckTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
-          <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -36,7 +36,7 @@ class QuestionDeck
             echoln(array_shift($this->rockQuestions));
     }
 
-    public function currentCategoryFor ($place)
+    public function CategoryAt ($place)
     {
         if ($place == 0) return "Pop";
         if ($place == 4) return "Pop";
@@ -47,7 +47,10 @@ class QuestionDeck
         if ($place == 2) return "Sports";
         if ($place == 6) return "Sports";
         if ($place == 10) return "Sports";
-        return "Rock";
+        if ($place == 3) return "Rock";
+        if ($place == 7) return "Rock";
+        if ($place == 11) return "Rock";
+        throw new Exception('Nessuna Categoria');
     }
 
     public function createRockQuestion ($index)
