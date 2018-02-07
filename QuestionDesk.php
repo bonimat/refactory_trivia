@@ -71,10 +71,10 @@ class QuestionDeck
     public function fillQuestions ()
     {
         for ($i = 0; $i < 50; $i++) {
-            $this->pop->add("Pop Question " . $i);
-            $this->science->add("Science Question " . $i);
-            $this->sports->add("Sports Question " . $i);
-            $this->rock->add("Rock Question " . $i);
+            $this->pop->add($this->pop->getCategory()." Question " . $i);
+            $this->science->add($this->science->getCategory()." Question " . $i);
+            $this->sports->add($this->sports->getCategory()." Question " . $i);
+            $this->rock->add($this->rock->getCategory()." Question " . $i);
 
         }
     }
