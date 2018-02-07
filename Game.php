@@ -101,8 +101,7 @@ class Game {
 	}
 
 	function  askQuestion() {
-        $currentCategory = $this->currentCategory();
-        QuestionDeck::askQuestionFor($currentCategory, $this);
+        return QuestionDeck::askQuestionFor($this->currentCategory(), $this);
 	}
 
 
