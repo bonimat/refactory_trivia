@@ -9,7 +9,6 @@
  * */
 
 
-
 function echoln($string) {
   echo $string."\n";
 }
@@ -42,7 +41,7 @@ class Game {
         $this->rockQuestions = array();
 
         $this->questionDeck = new QuestionDeck();
-        $this->fillQuestions($this);
+        $this->questionDeck->fillQuestions($this);
     }
 
     function isPlayable() {
@@ -180,19 +179,20 @@ class Game {
 		return !($this->purses[$this->currentPlayer] == 6);
 	}
 
-    public function fillQuestions(Game $game) {
-        for ($i = 0; $i < 50; $i++) {
-            array_push($game->popQuestions, "Pop Question " . $i);
-            array_push($game->scienceQuestions, ("Science Question " . $i));
-            array_push($game->sportsQuestions, ("Sports Question " . $i));
-            array_push($game->rockQuestions, QuestionDeck::createRockQuestion($i));
-        }
-    }
 }
 
 Class QuestionDeck {
 
     public function createRockQuestion($index) {
         return "Rock Question " . $index;
+    }
+
+    public function  fillQuestions(Game $game) {
+        for ($i = 0; $i < 50; $i++) {
+            array_push($game->popQuestions, "Pop Question " . $i);
+            array_push($game->scienceQuestions, ("Science Question " . $i));
+            array_push($game->sportsQuestions, ("Sports Question " . $i));
+            array_push($game->rockQuestions, QuestionDeck::createRockQuestion($i));
+        }
     }
 }
