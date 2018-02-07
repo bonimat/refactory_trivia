@@ -12,13 +12,19 @@ include_once __DIR__.'/../QuestionDesk.php';
 
 class QuestionDeckTest extends TestCase {
 
-
-    public function testPopCategory() {
+    /**
+     * @dataProvider placeECategory
+     */
+    public function testPopCategory($place,$category) {
         $questionDeck = new QuestionDeck();
-        $this->assertEquals('Pop', $questionDeck->currentCategoryFor(0));
-        $this->assertEquals('Pop', $questionDeck->currentCategoryFor(4));
-        $this->assertEquals('Pop', $questionDeck->currentCategoryFor(8));
-    }
+        $this->assertEquals($category, $questionDeck->currentCategoryFor($place));
+        }
 
-    function
+    static function placeECategory() {
+        return array(
+                array(0,'Pop'),
+                array(4,'Pop'),
+                array(8,'Pop')
+        );
+    }
 }
