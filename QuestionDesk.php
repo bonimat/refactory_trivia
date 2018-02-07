@@ -43,18 +43,11 @@ class QuestionDeck
 
     public function CategoryAt ($place)
     {
-        if ($place == 0) return "Pop";
-        if ($place == 4) return "Pop";
-        if ($place == 8) return "Pop";
-        if ($place == 1) return "Science";
-        if ($place == 5) return "Science";
-        if ($place == 9) return "Science";
-        if ($place == 2) return "Sports";
-        if ($place == 6) return "Sports";
-        if ($place == 10) return "Sports";
-        if ($place == 3) return "Rock";
-        if ($place == 7) return "Rock";
-        if ($place == 11) return "Rock";
+        if (in_array($place, array(0,4,8))) return "Pop";
+        if (in_array($place, array(1,5,9))) return "Science";
+        if (in_array($place, array(2,6,10))) return "Sports";
+        if (in_array($place, array(3,7,11))) return "Rock";
+
         throw new Exception('Place must be inside the board');
     }
 
