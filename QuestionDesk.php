@@ -28,11 +28,8 @@ class QuestionDeck
     function  __construct()    {
 
         $this->pop = new QuestionCategory("Pop", array(0, 4, 8));
-
         $this->science = new QuestionCategory("Science", array(1, 5, 9));
-
         $this->sports = new QuestionCategory("Sports", array(2, 6, 10));
-
         $this->rock = new QuestionCategory("Rock", array(3, 7, 11));
 
     }
@@ -41,16 +38,16 @@ class QuestionDeck
      */
     public function nextQuestion ($category)
     {
-        if ($category == "Pop") {
+        if ($category == $this->pop->getCategory()) {
             return $this->pop->next();
         }
-        if ($category == "Science") {
+        if ($category == $this->science->getCategory()) {
             return $this->science->next();
         }
-        if ($category == "Sports") {
+        if ($category == $this->sports->getCategory()) {
             return $this->sports->next();
         }
-        if ($category == "Rock") {
+        if ($category == $this->rock->getCategory()) {
             return $this->rock->next();
         }
         throw new Exception("YOU MORON!");
