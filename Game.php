@@ -31,10 +31,6 @@ class Game {
 
     }
 
-    function isPlayable() {
-        return ($this->howManyPlayers() >= 2);
-    }
-
     function add($playerName) {
         array_push($this->players, $playerName);
         $this->places[$this->howManyPlayers()] = 0;
@@ -55,7 +51,7 @@ class Game {
         echoln("They have rolled a " . $roll);
 
         if ($this->inPenaltyBox[$this->currentPlayer]) {
-            if ($roll % 2 != 0) {
+            if ($this->isOdd($roll)) {
                 $this->isGettingOutOfPenaltyBox = true;
 
                 echoln($this->players[$this->currentPlayer] . " is getting out of the penalty box");
@@ -151,7 +147,12 @@ class Game {
         return !($this->purses[$this->currentPlayer] == 6);
     }
 
-
-
+    /**
+     * @param $roll
+     * @return bool
+     */
+    private function isOdd($roll): bool {
+        return $roll % 2 != 0;
+    }
 
 }
