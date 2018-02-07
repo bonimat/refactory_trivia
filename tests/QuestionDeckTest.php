@@ -61,7 +61,7 @@ class QuestionDeckTest extends TestCase {
         $questionDeck = new QuestionDeck();
         $questionDeck->fillQuestions();
 
-        $this->assertEquals($category.' Question 0', $questionDeck->askQuestionFor($category));
+        $this->assertEquals($category.' Question 0', $questionDeck->nextQuestion($category));
 
     }
 
@@ -81,7 +81,7 @@ class QuestionDeckTest extends TestCase {
         $questionDeck->fillQuestions();
         $error = null;
         try {
-            $questionDeck->askQuestionFor("UNKNOWN");
+            $questionDeck->nextQuestion("UNKNOWN");
         }catch (Exception $ex){
             $error = $ex;
         }
@@ -93,9 +93,9 @@ class QuestionDeckTest extends TestCase {
         $questionDeck = new QuestionDeck();
         $questionDeck->fillQuestions();
 
-        $this->assertEquals("Pop Question 0", $questionDeck->askQuestionFor("Pop"));
-        $this->assertEquals("Pop Question 1", $questionDeck->askQuestionFor("Pop"));
-        $this->assertEquals("Pop Question 2", $questionDeck->askQuestionFor("Pop"));
-        $this->assertEquals("Pop Question 3", $questionDeck->askQuestionFor("Pop"));
+        $this->assertEquals("Pop Question 0", $questionDeck->nextQuestion("Pop"));
+        $this->assertEquals("Pop Question 1", $questionDeck->nextQuestion("Pop"));
+        $this->assertEquals("Pop Question 2", $questionDeck->nextQuestion("Pop"));
+        $this->assertEquals("Pop Question 3", $questionDeck->nextQuestion("Pop"));
     }
 }

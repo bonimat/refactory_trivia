@@ -24,26 +24,21 @@ class QuestionDeck
     /**\
      * @param $category
      */
-    public function askQuestionFor ($category)
+    public function nextQuestion ($category)
     {
-        $x = null;
         if ($category == "Pop") {
-            $x = array_shift($this->popQuestions);
+            return(array_shift($this->popQuestions));
         }
         if ($category == "Science") {
-            $x = array_shift($this->scienceQuestions);
+            return(array_shift($this->scienceQuestions));
         }
         if ($category == "Sports") {
-            $x = array_shift($this->sportsQuestions);
+            return(array_shift($this->sportsQuestions));
         }
         if ($category == "Rock") {
-            $x = array_shift($this->rockQuestions);
+            return(array_shift($this->rockQuestions));
         }
-        if (is_null($category)) {
-            throw new Exception("YOU MORON!");
-        }
-        echoln($x);
-        return $x;
+        throw new Exception("YOU MORON!");
     }
 
     public function CategoryAt ($place)

@@ -87,7 +87,8 @@ class Game {
     }
 
     function askQuestion() {
-        return $this->questionDeck->askQuestionFor($this->currentCategory());
+        $question = $this->questionDeck->nextQuestion($this->currentCategory());
+        echoln($question);
     }
 
 
