@@ -92,7 +92,7 @@ class Game {
     }
 
     function askQuestion() {
-        $this->questionDeck->askQuestionFor($this->currentCategory());
+        return $this->questionDeck->askQuestionFor($this->currentCategory());
     }
 
 
