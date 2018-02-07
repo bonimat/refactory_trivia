@@ -1,6 +1,7 @@
 <?php
 
 include __DIR__.'/../GameShell.php';
+include __DIR__.'/../QuestionDesk.php';
 use PHPUnit\Framework\TestCase;
 
 class GoldenMasterTest extends TestCase

@@ -101,14 +101,8 @@ class Game {
 	}
 
 	function  askQuestion() {
-		if ($this->currentCategory() == "Pop")
-			echoln(array_shift($this->popQuestions));
-		if ($this->currentCategory() == "Science")
-			echoln(array_shift($this->scienceQuestions));
-		if ($this->currentCategory() == "Sports")
-			echoln(array_shift($this->sportsQuestions));
-		if ($this->currentCategory() == "Rock")
-			echoln(array_shift($this->rockQuestions));
+        $currentCategory = $this->currentCategory();
+        QuestionDeck::askQuestionFor($currentCategory, $this);
 	}
 
 
@@ -173,54 +167,3 @@ class Game {
 
 }
 
-Class QuestionDeck {
-
-    /**
-     * @param $place
-     * @return string
-     */
-    public function currentCategoryFor($place): string {
-        if ($place == 0) {
-            return "Pop";
-        }
-        if ($place == 4) {
-            return "Pop";
-        }
-        if ($place == 8) {
-            return "Pop";
-        }
-        if ($place == 1) {
-            return "Science";
-        }
-        if ($place == 5) {
-            return "Science";
-        }
-        if ($place == 9) {
-            return "Science";
-        }
-        if ($place == 2) {
-            return "Sports";
-        }
-        if ($place == 6) {
-            return "Sports";
-        }
-        if ($place == 10) {
-            return "Sports";
-        }
-        return "Rock";
-    }
-
-    public function createRockQuestion($index) {
-        return "Rock Question " . $index;
-    }
-
-    public function  fillQuestions(Game $game) {
-        for ($i = 0; $i < 50; $i++) {
-            array_push($game->popQuestions, "Pop Question " . $i);
-            array_push($game->scienceQuestions, ("Science Question " . $i));
-            array_push($game->sportsQuestions, ("Sports Question " . $i));
-            array_push($game->rockQuestions, QuestionDeck::createRockQuestion($i));
-        }
-    }
-
-}
