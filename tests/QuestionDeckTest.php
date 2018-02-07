@@ -53,4 +53,16 @@ class QuestionDeckTest extends TestCase {
         $this->assertNotNull($error);
     }
 
+    
+    function testAskFirstQuestionForPop() {
+        $questionDeck = new QuestionDeck();
+        $questionDeck->fillQuestions();
+
+        $this->assertEquals('Pop'.' Question 0', $questionDeck->askQuestionFor("Pop"));
+        $this->assertEquals('Science'.' Question 0', $questionDeck->askQuestionFor("Science"));
+        $this->assertEquals('Sports'.' Question 0', $questionDeck->askQuestionFor("Sports"));
+        $this->assertEquals('Rock'.' Question 0', $questionDeck->askQuestionFor("Rock"));
+
+
+    }
 }

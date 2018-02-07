@@ -26,14 +26,28 @@ class QuestionDeck
      */
     public function askQuestionFor ($category)
     {
-        if ($category == "Pop")
-            echoln(array_shift($this->popQuestions));
-        if ($category == "Science")
-            echoln(array_shift($this->scienceQuestions));
-        if ($category == "Sports")
-            echoln(array_shift($this->sportsQuestions));
-        if ($category == "Rock")
-            echoln(array_shift($this->rockQuestions));
+        if ($category == "Pop") {
+            $x = array_shift($this->popQuestions);
+            echoln($x);
+            return $x;
+        }
+        if ($category == "Science") {
+            $x = array_shift($this->scienceQuestions);
+            echoln($x);
+            return $x;
+        }
+        if ($category == "Sports") {
+            $x = array_shift($this->sportsQuestions);
+            echoln($x);
+            return $x;
+        }
+        if ($category == "Rock") {
+            $x = array_shift($this->rockQuestions);
+            echoln($x);
+            return $x;
+        }
+
+        return "WHAT ARE YOU DOING HERE? YOU MORON!";
     }
 
     public function CategoryAt ($place)
