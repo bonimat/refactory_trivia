@@ -113,8 +113,7 @@ class Game {
 
 
 	function currentCategory() {
-        $place = $this->places[$this->currentPlayer];
-        return QuestionDeck::currentCategoryFor($place);
+        return QuestionDeck::currentCategoryFor($this->places[$this->currentPlayer]);
 	}
 
 	function wasCorrectlyAnswered() {
