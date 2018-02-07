@@ -26,7 +26,7 @@ class QuestionDeck
      */
     public function askQuestionFor ($category)
     {
-        $x = "WHAT ARE YOU DOING HERE? YOU MORON!";
+        $x = null;
         if ($category == "Pop") {
             $x = array_shift($this->popQuestions);
         }
@@ -39,7 +39,9 @@ class QuestionDeck
         if ($category == "Rock") {
             $x = array_shift($this->rockQuestions);
         }
-
+        if ($category == null) {
+            throw new Exception("YOU MO");
+        }
         echoln($x);
         return $x;
     }

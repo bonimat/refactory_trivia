@@ -74,4 +74,18 @@ class QuestionDeckTest extends TestCase {
         );
 
     }
+
+    function questionForUnknownCategory() {
+        $questionDeck = new QuestionDeck();
+
+        $questionDeck->fillQuestions();
+        $error = null;
+        try {
+            $questionDeck->askQuestionFor("UNKNOWN");
+        }catch (Exception $ex){
+            $error = $ex;
+        }
+
+        $this->assertNotNull($error);
+    }
 }
