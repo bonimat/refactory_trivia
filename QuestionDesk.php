@@ -39,8 +39,8 @@ class QuestionDeck
         if ($category == "Rock") {
             $x = array_shift($this->rockQuestions);
         }
-        if ($category == null) {
-            throw new Exception("YOU MO");
+        if (is_null($category)) {
+            throw new Exception("YOU MORON!");
         }
         echoln($x);
         return $x;
